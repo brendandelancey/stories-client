@@ -131,7 +131,7 @@ export default function Stories() {
         <Row fluid style={{ maxHeight: "100%", minHeight: "90%" }}>
           <Card>
             <Card.Body>
-              <h2 className="text-center mb-4">Prompt 22222222</h2>
+              <h2 className="text-center mb-4">Prompt</h2>
               {/* {error && <Alert variant="danger">{error}</Alert>} */}
               <Form>
                 <Form.Group

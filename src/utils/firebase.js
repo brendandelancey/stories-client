@@ -23,24 +23,3 @@ const auth = getAuth(app);
 
 export { auth };
 export default app;
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-// import { initializeApp } from "firebase/app";
-// import "firebase/auth"
-
-// const firebaseConfig=({
-//   apiKey: "AIzaSyAEuYi3VD7Bwidib_V3c6KoPMyl52YFqe0",
-//   authDomain: "lac-media.firebaseapp.com",
-//   databaseURL: "https://lac-media.firebaseio.com",
-//   projectId: "lac-media",
-//   storageBucket: "lac-media.appspot.com",
-//   messagingSenderId: "170654381250",
-//   appId: "1:170654381250:web:9b67a5618270a1e5b4775b",
-//   measurementId: "G-WC2WTG2RBF"
-// });
-
-// const app = initializeApp(firebaseConfig);
-
-// export const auth = app.auth
-// export default app

@@ -13,13 +13,12 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-   
+
     try {
-      
       setError("");
       setLoading(true);
       login(emailRef.current.value, passwordRef.current.value);
-      console.log("************************");
+
       navigate("stories");
     } catch {
       setError("Failed to log in");
@@ -54,56 +53,9 @@ export default function Login() {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Need anrmfv kvfkm rrfmkvrf account? <Link to="/signup">Sign Up</Link>
+          Need an account? <Link to="/signup">Sign Up</Link>
         </div>
       </div>
     </>
   );
 }
-
-// import { signInWithEmailAndPassword } from "firebase/auth";
-
-// import {auth} from '../utils/firebase'
-// import React, {  useState } from "react";
-
-// function Login() {
-// const [email, setEmail] = useState("")
-// const [password, setPassword] = useState("")
-
-//   const signIn=()=>{
-// signInWithEmailAndPassword(auth, email, password)
-//   .then((userCredential) => {
-//     // Signed in
-//     const user = userCredential.user;
-//     console.log(user)
-//     console.log(userCredential)
-//     alert("Successfully signed in")
-//     // ...
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     // const errorMessage = error.message;
-//     alert(errorCode)
-//   });
-// }
-// const signOut=()=>{
-// signOut(auth).then(() => {
-//   // Sign-out successful.
-// }).catch((error) => {
-//   // An error happened.
-// });}
-
-//   return (
-//     <div className="main">
-//       <div className="App">
-//        <input type={"email"} placeholder="pleace enter your email" onChange={(e)=> setEmail(e.target.value)}/>
-//        <input type={"password"} placeholder="please enter your password" onChange={(e)=> setPassword(e.target.value)}/>
-
-//        <button onClick={signIn}>Sign in</button>
-//        <button onClick={signOut}>Sign out</button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Login;
