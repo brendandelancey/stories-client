@@ -69,22 +69,22 @@ function App() {
   // );
 
   return (
-    <Container
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
-    >
-      <Router>
-        <AuthProvider>
-          <Routes>
-            {/* <PrivateRoute exact path="/" component={Dashboard} />*/}
-            <Route path="/stories" element={<Stories />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/" element={<Login />} />
-            {/* <Route path="/forgot-password" component={ForgotPassword} /> */}
-          </Routes>
-        </AuthProvider>
-      </Router>
-    </Container>
+    // <Container
+    //   className="d-flex align-items-center justify-content-center"
+    //   style={{ minHeight: "100vh" }}
+    // >
+    <Router>
+      <AuthProvider>
+        <Routes>
+          {/* <PrivateRoute exact path="/" component={Dashboard} />*/}
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/" element={<Login />} />
+          {/* <Route path="/forgot-password" component={ForgotPassword} /> */}
+        </Routes>
+      </AuthProvider>
+    </Router>
+    // </Container>
   );
 }
 
